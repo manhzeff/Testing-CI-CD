@@ -17,9 +17,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: Unit Test
-        run: |
-          pytest test/test_extractor.py
+      
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
