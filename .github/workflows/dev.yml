@@ -2,7 +2,7 @@ name: Deploy Terraform to AWS
 on:
   push:
     branches:
-      - qa
+      - dev
 jobs:
   deploy:
     runs-on: ubuntu-latest
